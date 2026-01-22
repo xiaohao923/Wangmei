@@ -91,7 +91,19 @@ h2{
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:40px;
 }
+.contact-link{
+  color: #9c0000;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid #9c0000;
+  padding-bottom: 2px;
+  transition: all .2s ease;
+}
 
+.contact-link:hover{
+  color: #c40000;
+  border-color: #c40000;
+}
 /* Product card */
 .product a{
   display:block;
@@ -166,7 +178,7 @@ footer{
     HealthMei 嚴選合作產品，  
     以品質、來源與透明資訊為核心原則。  
     購買請洽詢
-    <a href="contact.html">聯絡我們</a>
+    <a href="contact.html" class="contact-link">聯絡我們</a>
   </p>
 </div>
 
