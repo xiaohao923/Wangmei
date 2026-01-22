@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>HealthMei｜服務內容</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HealthMei 服務內容，提供健康諮詢、產品推薦與品牌合作服務。">
+
+  <link rel="icon" href="/jpg/200.jpg">
+  <meta name="theme-color" content="#9c0000">
+
+  <style>
+    body{
+      margin:0;
+      font-family:"Noto Sans TC", system-ui, -apple-system;
+      color:#222;
+      background:#fff;
+      line-height:1.7;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    header{
+      border-bottom:1px solid #e5e5e5;
+      background:#fff;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .wrap{max-width:1200px;margin:auto;padding:22px}
+
+    nav a{
+      margin-right:24px;
+      font-size:15px;
+      color:#333;
+      letter-spacing:.5px;
+    }
+    nav a.active{
+      color:#9c0000;
+      font-weight:600;
+    }
+
+    .hero{
+      background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+        url("https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1600&q=80")
+        center/cover no-repeat;
+      padding:120px 20px;
+      text-align:center;
+      color:#fff;
+    }
+    .hero h1{font-size:36px;margin-bottom:12px}
+    .hero p{font-size:18px;opacity:.9}
+
+    section{padding:80px 20px}
+
+    h2{
+      text-align:center;
+      font-size:28px;
+      margin-bottom:40px;
+    }
+
+    .services-grid{
+      max-width:1200px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:40px;
+    }
+
+    .service-card{
+      border:1px solid #eee;
+      border-radius:8px;
+      padding:24px;
+      transition:.2s;
+    }
+    .service-card:hover{
+      border-color:#9c0000;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .service-card img{
+      border-radius:6px;
+      margin-bottom:14px;
+    }
+    .service-card h3{
+      margin:0 0 8px;
+      font-size:20px;
+      color:#9c0000;
+    }
+    .service-card p{
+      color:#555;
+      font-size:15px;
+    }
+
+    .cta-btn{
+      display:block;
+      max-width:320px;
+      margin:50px auto 0;
+      text-align:center;
+      padding:14px;
+      background:#9c0000;
+      color:#fff;
+      border-radius:6px;
+      font-size:16px;
+    }
+    .cta-btn:hover{background:#7f0000}
+
+    footer{
+      background:#f7f7f7;
+      padding:40px 20px;
+      text-align:center;
+      font-size:14px;
+      color:#555;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="/">首頁</a>
+      <a href="/osc.html">產品介紹</a>
+      <a href="/services.html" class="active">服務內容</a>
+      <a href="/contact.html">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>服務內容</h1>
+  <p>
+    提供健康資訊整合、專業諮詢與品牌合作服務，  
+    陪伴你打造更安心的健康生活。
+  </p>
+</section>
+
+<section>
+  <h2>我們的服務項目</h2>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1580281658629-3b6d1a1f8f07?auto=format&fit=crop&w=800&q=80" alt="">
+      <h3>線上健康諮詢</h3>
+      <p>提供清楚、易理解的健康相關諮詢與資訊說明。</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1615484478243-c94e896edbae?auto=format&fit=crop&w=800&q=80" alt="">
+      <h3>產品推薦與介紹</h3>
+      <p>根據不同需求，推薦合適的保健與機能型產品。</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80" alt="">
+      <h3>品牌合作與內容企劃</h3>
+      <p>與理念相符的品牌共同合作，打造具價值的內容。</p>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1584697964154-42b8c26a6a0d?auto=format&fit=crop&w=800&q=80" alt="">
+      <h3>健康教育與專題文章</h3>
+      <p>整理專題知識，幫助讀者理解健康相關議題。</p>
+    </div>
+
+  </div>
+
+  <a href="/contact.html" class="cta-btn">聯絡我們諮詢</a>
+</section>
+
+<footer>
+  © 2026 HealthMei 鳳山站<br>
+  HealthMei Independent Health Platform
+</footer>
+
+</body>
+</html>
