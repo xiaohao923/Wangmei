@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>HealthMei｜限時活動</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="歐事佳超效旗艦版限時活動，1/31 優惠截止，現貨秒殺中。">
+
+  <link rel="icon" href="/jpg/200.jpg">
+  <meta name="theme-color" content="#9c0000">
+
+  <style>
+    body{
+      margin:0;
+      font-family:"Noto Sans TC", system-ui, -apple-system;
+      color:#222;
+      background:#fff;
+      line-height:1.8;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    header{
+      border-bottom:1px solid #e5e5e5;
+      background:#fff;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .wrap{max-width:1200px;margin:auto;padding:22px}
+
+    nav a{
+      margin-right:24px;
+      font-size:15px;
+      color:#333;
+    }
+    nav a.active{
+      color:#9c0000;
+      font-weight:600;
+    }
+
+    /* Hero */
+    .hero{
+      background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+        url("/jpg/S__89587725.jpg") center/cover no-repeat;
+      padding:130px 20px;
+      color:#fff;
+      text-align:center;
+    }
+    .hero h1{
+      font-size:38px;
+      margin-bottom:16px;
+      letter-spacing:1.5px;
+    }
+    .hero p{
+      font-size:18px;
+      opacity:.95;
+    }
+
+    section{
+      padding:80px 20px;
+    }
+
+    .content{
+      max-width:900px;
+      margin:auto;
+    }
+
+    .badge{
+      display:inline-block;
+      background:#9c0000;
+      color:#fff;
+      padding:6px 14px;
+      border-radius:20px;
+      font-size:14px;
+      margin-bottom:20px;
+    }
+
+    h2{
+      font-size:28px;
+      margin:20px 0;
+      color:#9c0000;
+    }
+
+    .highlight{
+      background:#f7f7f7;
+      padding:30px;
+      border-radius:8px;
+      margin:30px 0;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    .price-box{
+      background:#fff3f3;
+      border:1px solid #ffd6d6;
+      padding:30px;
+      border-radius:8px;
+      margin:40px 0;
+      text-align:center;
+    }
+    .price-box strong{
+      font-size:20px;
+      color:#9c0000;
+    }
+
+    .countdown{
+      font-size:22px;
+      font-weight:600;
+      color:#9c0000;
+      margin:20px 0;
+      text-align:center;
+    }
+
+    .cta{
+      display:block;
+      max-width:320px;
+      margin:40px auto 0;
+      background:#9c0000;
+      color:#fff;
+      text-align:center;
+      padding:16px;
+      border-radius:6px;
+      font-size:17px;
+    }
+    .cta:hover{background:#7f0000}
+
+    footer{
+      background:#f7f7f7;
+      padding:40px 20px;
+      text-align:center;
+      font-size:14px;
+      color:#555;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="/">首頁</a>
+      <a href="/osc.html">產品介紹</a>
+      <a href="/services.html">服務內容</a>
+      <a href="/promo.html" class="active">限時活動</a>
+      <a href="/contact.html">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>🚨 倒數 9 天・限時優惠</h1>
+  <p>1/31 優惠截止｜現貨秒殺中</p>
+</section>
+
+<section>
+  <div class="content">
+
+    <span class="badge">發布時間：1 / 22</span>
+
+    <h2>歐事佳「超效旗艦版」限時開跑</h2>
+
+    <p>
+      別再觀望了！<br>
+      歐事佳「超效旗艦版」首批現貨已大批量到貨，<br>
+      但限時優惠只到 <strong>1 / 31</strong>！
+    </p>
+
+    <div class="highlight">
+      <p><strong>這不是一般的益生菌，這是您的腸道航母！</strong></p>
+      <ul>
+        <li>400 億 CFU 高效菌數</li>
+        <li>21 種嚴選菌株</li>
+        <li>12 項專利技術</li>
+        <li>珍貴牛初乳加持</li>
+        <li>打造全家 3D 黃金三角守護</li>
+      </ul>
+    </div>
+
+    <p>
+      現在正是最佳入手時機！<br>
+      首批現貨數量有限，優惠更是倒數計時。
+    </p>
+
+    <div class="price-box">
+      <strong>🔥 限時方案</strong><br><br>
+      VIP 3 盒組：<strong>$3,900</strong><br>
+      團購 9 盒組：<strong>$9,900</strong>
+    </div>
+
+    <div id="countdown" class="countdown"></div>
+
+    <a href="/contact.html" class="cta">
+      👉 立即洽詢・鎖定健康航母
+    </a>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 HealthMei 鳳山站<br>
+  HealthMei Independent Health Platform
+</footer>
+
+<script>
+  // 倒數到 1/31 23:59:59
+  const endTime = new Date("2026-01-31T23:59:59").getTime();
+  const el = document.getElementById("countdown");
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = endTime - now;
+
+    if (diff <= 0) {
+      el.innerHTML = "⏰ 活動已結束";
+      return;
+    }
+
+    const d = Math.floor(diff / (1000*60*60*24));
+    const h = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    const m = Math.floor((diff % (1000*60*60)) / (1000*60));
+
+    el.innerHTML = `⏰ 優惠倒數：${d} 天 ${h} 小時 ${m} 分`;
+  }, 1000);
+</script>
+
+</body>
+</html>
