@@ -2,11 +2,9 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <title>HealthMei 鳳山站｜歐事佳授權經銷</title>
+  <title>HealthMei 鳳山站｜官方網路站點</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="description"
-        content="HealthMei 鳳山站為歐事佳國際控股集團授權經銷網路站點，提供官方產品資訊與線上諮詢服務。">
+  <meta name="description" content="HealthMei 鳳山站為獨立網路站點，提供健康資訊、產品介紹與線上諮詢服務。">
 
   <style>
     body{
@@ -14,22 +12,30 @@
       font-family: "Noto Sans TC", system-ui, -apple-system;
       color:#222;
       background:#fff;
+      line-height:1.7;
     }
-    a{color:inherit;text-decoration:none}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
     header{
       border-bottom:1px solid #e5e5e5;
       background:#fff;
     }
-    .wrap{max-width:1200px;margin:auto;padding:16px}
+    .wrap{max-width:1200px;margin:auto;padding:20px}
+
     nav a{
       margin-right:20px;
       font-size:15px;
+      color:#444;
     }
-    nav a.active{color:#b30000;font-weight:600}
+    nav a.active{
+      color:#b30000;
+      font-weight:600;
+    }
 
     /* Hero */
     .hero{
-      background:url("https://www.tw-osc.com/images/banner1.jpg") center/cover no-repeat;
+      background:url("/assets/images/hero.jpg") center/cover no-repeat;
       padding:120px 20px;
       text-align:center;
       color:#fff;
@@ -39,14 +45,19 @@
       margin-bottom:16px;
     }
     .hero p{
-      font-size:18px;
       max-width:640px;
       margin:auto;
+      font-size:18px;
     }
 
-    /* Section */
-    section{padding:60px 20px}
-    h2{text-align:center;font-size:28px;margin-bottom:40px}
+    section{
+      padding:70px 20px;
+    }
+    h2{
+      text-align:center;
+      font-size:28px;
+      margin-bottom:40px;
+    }
 
     .grid{
       max-width:1200px;
@@ -56,89 +67,65 @@
       gap:30px;
     }
 
-    .card img{width:100%}
-    .card h3{margin:12px 0}
-    .card p{color:#666;line-height:1.6}
+    .card h3{margin-top:16px}
+    .card p{color:#666}
 
     footer{
       background:#f7f7f7;
       padding:40px 20px;
       font-size:14px;
       color:#555;
+      text-align:center;
     }
-    footer .wrap{display:grid;gap:12px}
   </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <header>
   <div class="wrap">
     <nav>
-      <a href="https://healthmei.com/" class="active">首頁</a>
-      <a href="https://www.tw-osc.com/" target="_blank">品牌官網</a>
-      <a href="#brand">品質成就品牌</a>
-      <a href="#news">最新資訊</a>
-      <a href="#contact">聯絡我們</a>
+      <a href="/" class="active">首頁</a>
+      <a href="/about.html">關於 HealthMei</a>
+      <a href="/services.html">服務內容</a>
+      <a href="/contact.html">聯絡我們</a>
     </nav>
   </div>
 </header>
 
-<!-- Hero -->
 <section class="hero">
   <h1>HealthMei 鳳山站</h1>
   <p>
-    歐事佳國際控股集團<br>
-    授權經銷網路站點
+    獨立經營的健康資訊與服務平台，  
+    專注於線上內容、諮詢與品牌合作。
   </p>
 </section>
 
-<!-- 品質成就品牌 -->
-<section id="brand">
-  <h2>品質成就品牌</h2>
+<section>
+  <h2>我們的核心價值</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://www.tw-osc.com/images/quality1.jpg">
-      <h3>國際認證</h3>
-      <p>符合 ISO、HACCP、CGMP 等國際標準。</p>
+      <img src="/assets/images/quality-1.jpg" alt="">
+      <h3>專業資訊</h3>
+      <p>提供清楚、可信賴的健康相關內容。</p>
     </div>
     <div class="card">
-      <img src="https://www.tw-osc.com/images/quality2.jpg">
-      <h3>專利原料</h3>
-      <p>嚴選歐美日專利成分，品質穩定。</p>
+      <img src="/assets/images/quality-2.jpg" alt="">
+      <h3>嚴選合作</h3>
+      <p>與具備品質基礎的品牌進行合作與推薦。</p>
     </div>
     <div class="card">
-      <img src="https://www.tw-osc.com/images/quality3.jpg">
-      <h3>專業研發</h3>
-      <p>垂直整合研發團隊，確保產品效能。</p>
+      <img src="/assets/images/quality-3.jpg" alt="">
+      <h3>線上服務</h3>
+      <p>以網路為核心，提供即時且彈性的互動方式。</p>
     </div>
   </div>
 </section>
 
-<!-- 最新資訊 -->
-<section id="news">
-  <h2>最新資訊</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>歐事佳榮獲國際大獎</h3>
-      <p>葉黃素創新技術榮獲國際評審肯定。</p>
-    </div>
-    <div class="card">
-      <h3>品牌海外布局</h3>
-      <p>深耕亞洲與國際市場，拓展全球版圖。</p>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer id="contact">
-  <div class="wrap">
-    <strong>HealthMei 鳳山站</strong>
-    <div>歐事佳國際控股集團 授權經銷網路站點</div>
-    <div>品牌官網： https://www.tw-osc.com</div>
-    <div>聯絡方式：請透過官方或授權窗口洽詢</div>
-  </div>
+<footer>
+  © 2026 HealthMei 鳳山站  
+  <br>
+  本站為獨立網路站點，非品牌官方主站
 </footer>
 
 </body>
