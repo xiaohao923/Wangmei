@@ -55,20 +55,60 @@
     }
 
     section{padding:80px 20px}
+    section{
+  padding:80px 20px;
+}
+  
     h2{
       text-align:center;
-    .product a{
-      display:block;
       font-size:28px;
       margin-bottom:50px;
     }
-
+    
+    /* 產品列表 */
     .products{
       max-width:1200px;
       margin:auto;
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
       gap:40px;
+    }
+    
+    /* 單一產品 */
+    .product a{
+      display:block;
+      text-align:center;
+    }
+    
+    /* 圖片容器（關鍵） */
+    .product img{
+      width:100%;
+      max-width:240px;          /* 🔒 控制最大寬度 */
+      height:240px;             /* 🔒 固定高度 */
+      margin:0 auto;
+    
+      object-fit:contain;       /* ✅ 等比例縮放，不裁切 */
+      background:#f5f5f5;       /* 補底色，避免透明圖怪怪的 */
+      border-radius:6px;
+    
+      transition:transform .25s ease, box-shadow .25s ease;
+    }
+    
+    /* Hover 效果 */
+    .product img:hover{
+      transform:translateY(-4px);
+      box-shadow:0 12px 30px rgba(0,0,0,.15);
+    }
+    
+    .product h3{
+      margin:18px 0 8px;
+      font-size:20px;
+      letter-spacing:1px;
+    }
+    
+    .product p{
+      color:#666;
+      font-size:15px;
     }
 
       text-align:center;
