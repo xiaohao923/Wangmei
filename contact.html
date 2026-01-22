@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" href="/jpg/200.jpg">
   <title>HealthMei｜聯絡我們</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="HealthMei 聯絡我們頁面，提供電話與線上聯絡方式。">
+  <meta name="description" content="HealthMei 聯絡我們頁面，提供電話與 LINE 線上聯絡方式。">
 
   <style>
     body{
@@ -16,10 +16,6 @@
       line-height:1.7;
     }
     a{text-decoration:none;color:inherit}
-    input, textarea{
-      font-family:inherit;
-      font-size:15px;
-    }
 
     /* Header */
     header{
@@ -29,7 +25,11 @@
       top:0;
       z-index:10;
     }
-    .wrap{max-width:1200px;margin:auto;padding:22px}
+    .wrap{
+      max-width:1200px;
+      margin:auto;
+      padding:22px;
+    }
 
     nav a{
       margin-right:24px;
@@ -59,65 +59,45 @@
       margin:auto;
     }
 
-    section{padding:80px 20px}
+    section{
+      padding:80px 20px;
+    }
 
     .contact-grid{
-      max-width:1000px;
+      max-width:800px;
       margin:auto;
       display:grid;
-      grid-template-columns:1fr 1.2fr;
-      gap:60px;
+      grid-template-columns:1fr;
+      gap:40px;
     }
 
     /* Info */
     .info h2{
       font-size:24px;
-      margin-bottom:20px;
+      margin-bottom:24px;
     }
-    .info p{
-      color:#555;
-      margin-bottom:16px;
+    .item{
+      margin-bottom:22px;
     }
-    .info .item{
-      margin-bottom:18px;
-    }
-    .info .label{
+    .label{
       font-weight:600;
       letter-spacing:.5px;
+      margin-bottom:6px;
+    }
+    .value{
+      color:#555;
+      font-size:15px;
     }
 
-    /* Form */
-    .form h2{
-      font-size:24px;
-      margin-bottom:20px;
+    .value a{
+      color:#9c0000;
+      font-weight:600;
+      border-bottom:1px solid rgba(156,0,0,.4);
+      padding-bottom:2px;
     }
-    form{
-      display:grid;
-      gap:16px;
-    }
-    input, textarea{
-      width:100%;
-      padding:14px;
-      border:1px solid #ccc;
-      border-radius:4px;
-    }
-    textarea{
-      resize:vertical;
-      min-height:120px;
-    }
-    button{
-      margin-top:10px;
-      padding:14px;
-      border:none;
-      background:#9c0000;
-      color:#fff;
-      font-size:15px;
-      cursor:pointer;
-      border-radius:4px;
-      letter-spacing:1px;
-    }
-    button:hover{
-      background:#7f0000;
+    .value a:hover{
+      color:#7f0000;
+      border-color:#7f0000;
     }
 
     footer{
@@ -126,12 +106,6 @@
       font-size:14px;
       color:#555;
       text-align:center;
-    }
-
-    @media (max-width:900px){
-      .contact-grid{
-        grid-template-columns:1fr;
-      }
     }
   </style>
 </head>
@@ -152,7 +126,7 @@
 <div class="page-title">
   <h1>聯絡我們</h1>
   <p>
-    若您對 HealthMei 的服務、合作或內容有任何疑問，  
+    若您對 HealthMei 的產品、服務或合作有任何疑問，  
     歡迎透過以下方式與我們聯繫。
   </p>
 </div>
@@ -160,29 +134,33 @@
 <section>
   <div class="contact-grid">
 
-    <!-- Contact Info -->
     <div class="info">
       <h2>聯絡資訊</h2>
 
       <div class="item">
         <div class="label">電話</div>
-        <p><a href="tel:0915790656">0915-790-656</a></p>
+        <div class="value">
+          <a href="tel:0915790656">0915-790-656</a>
+        </div>
       </div>
 
       <div class="item">
-        <div class="label">LINE</div>
-        <p>（https://lin.ee/aGEss21）</p>
+        <div class="label">LINE 官方聯絡</div>
+        <div class="value">
+          <a href="https://lin.ee/aGEss21" target="_blank" rel="noopener">
+            https://lin.ee/aGEss21
+          </a>
+        </div>
       </div>
 
       <div class="item">
         <div class="label">服務說明</div>
-        <p>
-          我們提供線上諮詢、內容合作與品牌相關聯繫，  
-          將於收到訊息後盡快回覆。
-        </p>
+        <div class="value">
+          我們提供產品諮詢、內容合作與品牌相關聯繫，  
+          將於收到訊息後儘快回覆。
+        </div>
       </div>
     </div>
-
 
   </div>
 </section>
