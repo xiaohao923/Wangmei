@@ -40,13 +40,27 @@
     }
 
     /* Hero */
-    .hero{
-      background:
-        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
-        url("/assets/images/hero.jpg") center/cover no-repeat;
-      padding:140px 20px;
-      text-align:center;
-      color:#fff;
+    .hero {
+      height: 260px;
+      background-image:
+        linear-gradient(
+          rgba(0,0,0,0.45),
+          rgba(0,0,0,0.45)
+        ),
+        url("/jpg/oop.jpg");
+    
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
+      color: #fff;
+      text-align: center;
+    }
     }
     .hero h1{
       font-size:42px;
