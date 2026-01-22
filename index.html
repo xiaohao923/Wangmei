@@ -1,1 +1,477 @@
-歐
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>鳳山站｜門市據點｜歐事佳國際控股集團</title>
+  <meta name="description" content="歐事佳國際控股集團｜鳳山站門市資訊、營業時間、聯絡方式與交通指引。" />
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --card:#121926;
+      --text:#e7edf6;
+      --muted:#a8b3c7;
+      --line:rgba(255,255,255,.10);
+      --brand:#7ee6ff;
+      --brand2:#b4ffcf;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background: radial-gradient(1200px 700px at 15% -10%, rgba(126,230,255,.18), transparent 60%),
+                  radial-gradient(1200px 700px at 90% 0%, rgba(180,255,207,.14), transparent 55%),
+                  linear-gradient(180deg, #070a0f 0%, #0b0f14 40%, #070a0f 100%);
+      color:var(--text);
+    }
+
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
+
+    /* Top bar */
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      background: rgba(7,10,15,.72);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .topbar-inner{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 220px;
+    }
+    .logo{
+      width:38px; height:38px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(126,230,255,.95), rgba(180,255,207,.92));
+      box-shadow: 0 10px 30px rgba(126,230,255,.18);
+    }
+    .brand h1{
+      font-size:14px; line-height:1.1; margin:0;
+      letter-spacing:.6px;
+    }
+    .brand small{display:block; color:var(--muted); font-weight:500; margin-top:3px}
+
+    .nav{
+      display:flex; align-items:center; gap:14px;
+      flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .nav a{
+      font-size:13px;
+      color: rgba(231,237,246,.92);
+      padding:9px 10px;
+      border-radius: 12px;
+      border:1px solid transparent;
+    }
+    .nav a:hover{
+      border-color: var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .nav a.active{
+      border-color: rgba(126,230,255,.35);
+      background: rgba(126,230,255,.08);
+    }
+
+    /* Hero */
+    .hero{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 36px 18px 18px;
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .hero-left{
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(18,25,38,.92), rgba(18,25,38,.65));
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .glow{
+      position:absolute; inset:-60px -80px auto auto;
+      width:280px; height:280px;
+      background: radial-gradient(circle at 30% 30%, rgba(126,230,255,.55), transparent 60%),
+                  radial-gradient(circle at 70% 70%, rgba(180,255,207,.35), transparent 62%);
+      filter: blur(6px);
+      opacity:.7;
+      pointer-events:none;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 12px;
+      border:1px solid rgba(126,230,255,.28);
+      background: rgba(126,230,255,.08);
+      border-radius: 999px;
+      font-size:12px;
+      color: rgba(231,237,246,.95);
+    }
+    .dot{
+      width:8px; height:8px; border-radius:99px;
+      background: var(--brand);
+      box-shadow: 0 0 18px rgba(126,230,255,.8);
+    }
+    .hero h2{
+      margin: 14px 0 10px;
+      font-size: 30px;
+      letter-spacing: .6px;
+    }
+    .hero p{
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 14px;
+      max-width: 56ch;
+    }
+    .quick{
+      margin-top: 18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .pill{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      border-radius: 999px;
+      padding: 10px 12px;
+      font-size: 13px;
+      color: rgba(231,237,246,.92);
+    }
+    .pill b{color:var(--text)}
+    .hero-right{
+      border: 1px solid var(--line);
+      background: rgba(18,25,38,.55);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      min-height: 260px;
+    }
+    .cover{
+      flex: 1;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.75)),
+        url("https://images.unsplash.com/photo-1520975661595-6453be3f7070?auto=format&fit=crop&w=1400&q=70");
+      background-size: cover;
+      background-position: center;
+      padding: 18px;
+      display:flex;
+      align-items:flex-end;
+    }
+    .cover h3{
+      margin:0;
+      font-size: 16px;
+      letter-spacing:.4px;
+    }
+    .cover small{
+      display:block; margin-top:6px;
+      color: rgba(231,237,246,.78);
+    }
+    .cta{
+      display:flex;
+      gap:10px;
+      padding: 16px;
+      border-top: 1px solid var(--line);
+      background: rgba(7,10,15,.35);
+      flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border-radius: 14px;
+      padding: 11px 14px;
+      font-size: 13px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: rgba(231,237,246,.95);
+      cursor:pointer;
+    }
+    .btn:hover{background: rgba(255,255,255,.06)}
+    .btn.primary{
+      border-color: rgba(126,230,255,.35);
+      background: linear-gradient(135deg, rgba(126,230,255,.22), rgba(180,255,207,.14));
+    }
+
+    /* Main */
+    main{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 10px 18px 40px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      align-items:start;
+    }
+    .card{
+      border: 1px solid var(--line);
+      background: rgba(18,25,38,.58);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card-header{
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(7,10,15,.30);
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+    .card-header h4{margin:0; font-size: 15px; letter-spacing:.3px}
+    .card-body{padding: 16px 18px}
+    .kv{
+      display:grid;
+      grid-template-columns: 120px 1fr;
+      gap: 10px 12px;
+      font-size: 14px;
+      line-height:1.7;
+    }
+    .k{color: var(--muted)}
+    .v{color: rgba(231,237,246,.95)}
+    .v a{
+      color: rgba(126,230,255,.95);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .map{
+      aspect-ratio: 16/11;
+      width: 100%;
+      border:0;
+      display:block;
+      background: #0b0f14;
+    }
+
+    .note{
+      margin-top: 12px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px dashed rgba(126,230,255,.35);
+      background: rgba(126,230,255,.06);
+      color: rgba(231,237,246,.85);
+      font-size: 13px;
+      line-height:1.7;
+    }
+
+    /* Footer */
+    footer{
+      border-top: 1px solid var(--line);
+      background: rgba(7,10,15,.65);
+    }
+    .footer-inner{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px 18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap: 16px 24px;
+      justify-content:space-between;
+      align-items:flex-start;
+      color: rgba(231,237,246,.82);
+    }
+    .footer-inner h5{margin:0 0 8px; font-size: 14px}
+    .footer-inner p{margin:0; color: var(--muted); font-size:13px; line-height:1.7}
+    .mini-links{display:flex; gap:10px; flex-wrap:wrap}
+    .mini-links a{
+      font-size: 13px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .mini-links a:hover{background: rgba(255,255,255,.06)}
+    .copyright{
+      width:100%;
+      margin-top: 8px;
+      color: rgba(168,179,199,.85);
+      font-size: 12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px){
+      .hero{grid-template-columns: 1fr}
+      main{grid-template-columns: 1fr}
+      .brand{min-width:auto}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top Navigation (依照官網導覽項目整理，可自行改連結) -->
+  <header class="topbar" role="banner">
+    <div class="topbar-inner">
+      <a class="brand" href="https://www.tw-osc.com/" aria-label="回到首頁">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>歐事佳國際控股集團</h1>
+          <small>LIGNUM VITAE</small>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="主選單">
+        <a href="https://www.tw-osc.com/" target="_self">首頁</a>
+        <a href="https://www.tw-osc.com/about.html" target="_self">關於集團</a>
+        <a href="https://www.tw-osc.com/store.html" class="active" target="_self">門市據點</a>
+        <a href="https://www.tw-osc.com/contact.html" target="_self">聯絡我們</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="門市頁首">
+    <div class="hero-left">
+      <div class="glow" aria-hidden="true"></div>
+      <span class="badge"><span class="dot" aria-hidden="true"></span> Store Location</span>
+      <h2>鳳山站</h2>
+      <p>
+        這一頁是為「鳳山站」建立的門市資訊頁範本，版型延續官網門市據點的呈現邏輯：門市資料、交通/地圖、以及快速聯絡入口。
+        你只要把下方的地址、電話、營業時間與地圖座標替換成你的實際資料即可。
+      </p>
+
+      <div class="quick" aria-label="重點資訊">
+        <div class="pill"><b>服務</b>｜現場諮詢／商品選購</div>
+        <div class="pill"><b>預約</b>｜建議先來電或訊息確認</div>
+        <div class="pill"><b>付款</b>｜現金／行動支付（依現場為準）</div>
+      </div>
+    </div>
+
+    <aside class="hero-right" aria-label="快速操作">
+      <div class="cover" role="img" aria-label="門市形象圖">
+        <div>
+          <h3>門市據點｜鳳山站</h3>
+          <small>高雄市鳳山區（請依實際地址修改）</small>
+        </div>
+      </div>
+
+      <div class="cta">
+        <!-- 你可把電話/LINE/微信換成實際連結 -->
+        <a class="btn primary" href="tel:+886-7-000-0000">立即撥打</a>
+        <a class="btn" href="#map">查看地圖</a>
+        <a class="btn" href="#traffic">交通資訊</a>
+      </div>
+    </aside>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Store Info -->
+    <section class="card" aria-label="門市資訊">
+      <div class="card-header">
+        <h4>門市資訊</h4>
+        <span style="color:rgba(126,230,255,.9);font-size:12px;">FONGSHAN</span>
+      </div>
+
+      <div class="card-body">
+        <div class="kv" role="list">
+          <div class="k" role="listitem">門市名稱</div>
+          <div class="v">鳳山站</div>
+
+          <div class="k" role="listitem">地址</div>
+          <div class="v">高雄市鳳山區（請填寫完整地址）</div>
+
+          <div class="k" role="listitem">門市電話</div>
+          <div class="v"><a href="tel:+886-7-000-0000">+886 7 000 0000</a>（請替換）</div>
+
+          <div class="k" role="listitem">聯絡方式</div>
+          <div class="v">
+            LINE / 微信（可填寫帳號或連結）
+          </div>
+
+          <div class="k" role="listitem">營業時間</div>
+          <div class="v">每日 10:00 – 19:00（請替換）</div>
+
+          <div class="k" role="listitem">備註</div>
+          <div class="v">建議到店前先訊息/電話確認庫存與服務時段。</div>
+        </div>
+
+        <div class="note">
+          你如果想做成「跟官網門市據點頁一樣，左圖右文字」的排法，我也可以再幫你改成一致的卡片排版（含門市圖片、店長資訊欄位等）。
+        </div>
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="card" id="map" aria-label="地圖與交通">
+      <div class="card-header">
+        <h4>地圖位置</h4>
+        <span style="color:rgba(180,255,207,.9);font-size:12px;">MAP</span>
+      </div>
+
+      <!-- Google Maps Embed：把 q= 後面的文字換成你的實際地址或座標 -->
+      <iframe
+        class="map"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=%E9%AB%98%E9%9B%84%E5%B8%82%E9%B3%B3%E5%B1%B1%E5%8D%80&output=embed"
+        title="鳳山站門市地圖">
+      </iframe>
+
+      <div class="card-body" id="traffic">
+        <div class="kv">
+          <div class="k">大眾運輸</div>
+          <div class="v">可填：捷運／公車路線與下車站點（請替換）。</div>
+
+          <div class="k">自行開車</div>
+          <div class="v">可填：附近停車場、收費方式、步行時間（請替換）。</div>
+
+          <div class="k">步行指引</div>
+          <div class="v">可填：從鳳山車站/捷運站出口的路線（請替換）。</div>
+        </div>
+
+        <div class="note">
+          小提醒：若你希望更像官網的「簡潔門市列表」，可以把這頁當作「門市詳細頁」，再從 store.html 的門市卡片連過來。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (依照官網頁尾資訊整理，請依實際需要調整) -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <h5>歐事佳國際控股集團</h5>
+        <p>ADD：高雄市前鎮區復興四路12號7樓之7〖高雄軟體科技園區〗</p>
+        <p>TEL：+886 7 5365577</p>
+      </div>
+
+      <div>
+        <h5>快速連結</h5>
+        <div class="mini-links" aria-label="頁尾連結">
+          <a href="https://www.tw-osc.com/store.html">門市據點</a>
+          <a href="https://www.tw-osc.com/" target="_self">回首頁</a>
+          <a href="https://www.tw-osc.com/contact.html">聯絡我們</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        © <span id="y"></span> Ou Shih Chia International Holdings Group. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
