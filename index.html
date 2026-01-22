@@ -2,14 +2,14 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="utf-8">
-  <title>HealthMei 官方網路站點</title>
+  <title>HealthMei｜鳳山站官方網站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="HealthMei 。">
+  <meta name="description" content="HealthMei 鳳山站，專注於健康資訊、線上服務與品牌合作的獨立平台。">
 
   <style>
     body{
       margin:0;
-      font-family: "Noto Sans TC", system-ui, -apple-system;
+      font-family:"Noto Sans TC", system-ui, -apple-system;
       color:#222;
       background:#fff;
       line-height:1.7;
@@ -17,62 +17,84 @@
     a{text-decoration:none;color:inherit}
     img{max-width:100%;display:block}
 
+    /* Header */
     header{
       border-bottom:1px solid #e5e5e5;
       background:#fff;
+      position:sticky;
+      top:0;
+      z-index:10;
     }
-    .wrap{max-width:1200px;margin:auto;padding:20px}
+    .wrap{max-width:1200px;margin:auto;padding:22px}
 
     nav a{
-      margin-right:20px;
+      margin-right:24px;
       font-size:15px;
-      color:#444;
+      color:#333;
+      letter-spacing:.5px;
     }
     nav a.active{
-      color:#b30000;
+      color:#9c0000;
       font-weight:600;
     }
 
     /* Hero */
     .hero{
-      background:url("/assets/images/hero.jpg") center/cover no-repeat;
-      padding:120px 20px;
+      background:
+        linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+        url("/assets/images/hero.jpg") center/cover no-repeat;
+      padding:140px 20px;
       text-align:center;
       color:#fff;
     }
     .hero h1{
-      font-size:40px;
-      margin-bottom:16px;
+      font-size:42px;
+      letter-spacing:2px;
+      margin-bottom:18px;
     }
     .hero p{
-      max-width:640px;
+      max-width:680px;
       margin:auto;
       font-size:18px;
+      opacity:.95;
     }
 
-    section{
-      padding:70px 20px;
-    }
+    section{padding:80px 20px}
     h2{
       text-align:center;
-      font-size:28px;
-      margin-bottom:40px;
+      font-size:30px;
+      letter-spacing:1px;
+      margin-bottom:50px;
     }
 
+    /* Core Values */
     .grid{
       max-width:1200px;
       margin:auto;
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:30px;
+      gap:36px;
+    }
+    .card{
+      text-align:center;
+    }
+    .card img{
+      border-radius:6px;
+    }
+    .card h3{
+      margin:20px 0 10px;
+      font-size:20px;
+      letter-spacing:1px;
+    }
+    .card p{
+      color:#666;
+      font-size:15px;
     }
 
-    .card h3{margin-top:16px}
-    .card p{color:#666}
-
+    /* Footer */
     footer{
       background:#f7f7f7;
-      padding:40px 20px;
+      padding:50px 20px;
       font-size:14px;
       color:#555;
       text-align:center;
@@ -85,7 +107,7 @@
 <header>
   <div class="wrap">
     <nav>
-      <a href="/" class="active">首頁</a> 
+      <a href="/" class="active">首頁</a>
       <a href="/shop.html">商品</a>
       <a href="/services.html">服務內容</a>
       <a href="/contact.html">聯絡我們</a>
@@ -94,37 +116,39 @@
 </header>
 
 <section class="hero">
-  <h1>HealthMei </h1>
+  <h1>HealthMei 鳳山站</h1>
   <p>
-    獨立經營的健康資訊與服務平台，  
-    專注於線上內容、諮詢與品牌合作。
+    以健康為核心，整合資訊、服務與品牌信任，  
+    打造專屬於現代生活的線上健康平台。
   </p>
 </section>
 
 <section>
-  <h2>我們的核心價值</h2>
+  <h2>品質成就品牌</h2>
   <div class="grid">
     <div class="card">
-      <img src="網址" alt="">
+      <img src="/assets/images/value-info.jpg" alt="專業健康資訊">
       <h3>專業資訊</h3>
-      <p>提供清楚、可信賴的健康相關內容。</p>
+      <p>以清楚、可理解的方式，傳遞可信賴的健康相關內容。</p>
     </div>
+
     <div class="card">
-      <img src="網址" alt="">
+      <img src="/assets/images/value-partner.jpg" alt="嚴選合作品牌">
       <h3>嚴選合作</h3>
-      <p>與具備品質基礎的品牌進行合作與推薦。</p>
+      <p>只與理念相符、品質基礎扎實的品牌進行合作與推薦。</p>
     </div>
+
     <div class="card">
-      <img src="網址" alt="">
+      <img src="/assets/images/value-service.jpg" alt="線上服務平台">
       <h3>線上服務</h3>
-      <p>以網路為核心，提供即時且彈性的互動方式。</p>
+      <p>以網路為核心，提供彈性、即時且友善的互動體驗。</p>
     </div>
   </div>
 </section>
 
 <footer>
-  © 2026 HealthMei 鳳山站  
-  <br>
+  © 2026 HealthMei 鳳山站<br>
+  HealthMei Independent Health Platform
 </footer>
 
 </body>
