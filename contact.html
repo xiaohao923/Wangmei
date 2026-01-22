@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <title>HealthMei｜聯絡我們</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HealthMei 聯絡我們頁面，提供電話與線上聯絡方式。">
+
+  <style>
+    body{
+      margin:0;
+      font-family:"Noto Sans TC", system-ui, -apple-system;
+      color:#222;
+      background:#fff;
+      line-height:1.7;
+    }
+    a{text-decoration:none;color:inherit}
+    input, textarea{
+      font-family:inherit;
+      font-size:15px;
+    }
+
+    /* Header */
+    header{
+      border-bottom:1px solid #e5e5e5;
+      background:#fff;
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .wrap{max-width:1200px;margin:auto;padding:22px}
+
+    nav a{
+      margin-right:24px;
+      font-size:15px;
+      color:#333;
+      letter-spacing:.5px;
+    }
+    nav a.active{
+      color:#9c0000;
+      font-weight:600;
+    }
+
+    /* Page title */
+    .page-title{
+      background:#f7f7f7;
+      padding:90px 20px;
+      text-align:center;
+    }
+    .page-title h1{
+      font-size:34px;
+      letter-spacing:2px;
+      margin-bottom:12px;
+    }
+    .page-title p{
+      color:#666;
+      max-width:640px;
+      margin:auto;
+    }
+
+    section{padding:80px 20px}
+
+    .contact-grid{
+      max-width:1000px;
+      margin:auto;
+      display:grid;
+      grid-template-columns:1fr 1.2fr;
+      gap:60px;
+    }
+
+    /* Info */
+    .info h2{
+      font-size:24px;
+      margin-bottom:20px;
+    }
+    .info p{
+      color:#555;
+      margin-bottom:16px;
+    }
+    .info .item{
+      margin-bottom:18px;
+    }
+    .info .label{
+      font-weight:600;
+      letter-spacing:.5px;
+    }
+
+    /* Form */
+    .form h2{
+      font-size:24px;
+      margin-bottom:20px;
+    }
+    form{
+      display:grid;
+      gap:16px;
+    }
+    input, textarea{
+      width:100%;
+      padding:14px;
+      border:1px solid #ccc;
+      border-radius:4px;
+    }
+    textarea{
+      resize:vertical;
+      min-height:120px;
+    }
+    button{
+      margin-top:10px;
+      padding:14px;
+      border:none;
+      background:#9c0000;
+      color:#fff;
+      font-size:15px;
+      cursor:pointer;
+      border-radius:4px;
+      letter-spacing:1px;
+    }
+    button:hover{
+      background:#7f0000;
+    }
+
+    footer{
+      background:#f7f7f7;
+      padding:50px 20px;
+      font-size:14px;
+      color:#555;
+      text-align:center;
+    }
+
+    @media (max-width:900px){
+      .contact-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="/">首頁</a>
+      <a href="/osc.html">產品介紹</a>
+      <a href="/services.html">服務內容</a>
+      <a href="/contact.html" class="active">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-title">
+  <h1>聯絡我們</h1>
+  <p>
+    若您對 HealthMei 的服務、合作或內容有任何疑問，  
+    歡迎透過以下方式與我們聯繫。
+  </p>
+</div>
+
+<section>
+  <div class="contact-grid">
+
+    <!-- Contact Info -->
+    <div class="info">
+      <h2>聯絡資訊</h2>
+
+      <div class="item">
+        <div class="label">電話</div>
+        <p><a href="tel:0915790656">0915-790-656</a></p>
+      </div>
+
+      <div class="item">
+        <div class="label">LINE</div>
+        <p>（LINE 官方帳號，稍後提供）</p>
+      </div>
+
+      <div class="item">
+        <div class="label">服務說明</div>
+        <p>
+          我們提供線上諮詢、內容合作與品牌相關聯繫，  
+          將於收到訊息後盡快回覆。
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form">
+      <h2>線上聯絡表單</h2>
+
+      <!-- 目前為純前端展示，之後可接後端 -->
+      <form>
+        <input type="text" placeholder="您的姓名">
+        <input type="email" placeholder="電子郵件">
+        <input type="tel" placeholder="聯絡電話">
+        <textarea placeholder="請輸入您的訊息內容"></textarea>
+        <button type="submit">送出訊息</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 HealthMei 鳳山站<br>
+  HealthMei Independent Health Platform
+</footer>
+
+</body>
+</html>
