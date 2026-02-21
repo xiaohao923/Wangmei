@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>水解膠原蛋白｜HealthMei</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HealthMei 水解膠原蛋白產品介紹，100% 德國水解膠原蛋白，日常營養補充。">
 
   <style>
     body{
@@ -19,18 +20,18 @@
       color:inherit;
     }
 
-    /* 返回列 */
     .back-bar{
       padding:20px;
       border-bottom:1px solid #e5e5e5;
+      background:#fff;
     }
 
     .back-bar a{
       font-size:15px;
-      color:#333;
+      color:#9c0000;
+      font-weight:600;
     }
 
-    /* 主內容 */
     .container{
       max-width:900px;
       margin:0 auto;
@@ -45,6 +46,8 @@
     .product-img img{
       width:100%;
       display:block;
+      background:#f5f5f5;
+      border-radius:6px;
     }
 
     h1{
@@ -55,14 +58,52 @@
     }
 
     .info{
-      max-width:600px;
+      max-width:640px;
       margin:0 auto;
       font-size:15px;
       color:#444;
     }
 
     .info p{
-      margin:8px 0;
+      margin:10px 0;
+    }
+
+    .highlight{
+      margin:24px 0;
+      padding:18px 20px;
+      background:#f7f7f7;
+      border-left:4px solid #9c0000;
+    }
+
+    .buy-section{
+      text-align:center;
+      margin-top:40px;
+    }
+
+    .buy-btn{
+      display:inline-block;
+      background:#9c0000;
+      color:#fff;
+      padding:16px 42px;
+      font-size:16px;
+      font-weight:600;
+      border-radius:6px;
+      transition:all .25s ease;
+      box-shadow:0 6px 18px rgba(156,0,0,0.25);
+    }
+
+    .buy-btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 10px 24px rgba(156,0,0,0.35);
+      background:#b30000;
+    }
+
+    @media(max-width:600px){
+      .buy-btn{
+        display:block;
+        width:100%;
+        box-sizing:border-box;
+      }
     }
 
     footer{
@@ -78,12 +119,10 @@
 
 <body>
 
-<!-- 返回 -->
 <div class="back-bar">
-  <a href="/osc.html">← 返回 OSC</a>
+  <a href="/osc.html">← 返回 產品介紹</a>
 </div>
 
-<!-- 內容 -->
 <div class="container">
 
   <div class="product-img">
@@ -93,18 +132,48 @@
   <h1>歐事佳 水解膠原蛋白</h1>
 
   <div class="info">
-    <p>品名：歐事佳水解膠原蛋白</p>
-    <p>內容物：100 公克</p>
-    <p>主成分：100% 德國水解膠原蛋白</p>
-    <p>用法用量：每日建議補充 5 公克（約 2 湯匙），加入 300cc 水、牛奶或飲品中食用（多食無益）</p>
-    <p>原料來源：PEPTIPLUS XB aggl.（GELITA SOLD）</p>
-    <p>產地：台灣（HACCP、ISO22000 認證工廠分裝）</p>
+
+    <div class="highlight">
+      ✔ 100% 德國水解膠原蛋白<br>
+      ✔ 高純度蛋白來源<br>
+      ✔ 日常營養補充保養
+    </div>
+
+    <p><strong>品名：</strong>歐事佳水解膠原蛋白</p>
+    <p><strong>內容物：</strong>100 公克</p>
+
+    <p>
+      <strong>主成分：</strong><br>
+      100% 德國水解膠原蛋白<br>
+      原料來源：PEPTIPLUS XB aggl.（GELITA SOLD）
+    </p>
+
+    <p>
+      <strong>用法用量：</strong><br>
+      每日建議補充 5 公克（約 2 湯匙）<br>
+      加入 300cc 水、牛奶或飲品中食用（多食無益）
+    </p>
+
+    <p><strong>產地：</strong>台灣（HACCP、ISO22000 認證工廠分裝）</p>
+
+    <p style="margin-top:30px;color:#666;">
+      本產品為日常營養補充用途，非醫療行為。  
+      實際感受因個人體質而異，若有特殊狀況請先諮詢專業人士。
+    </p>
+
+    <div class="buy-section">
+      <a href="https://api.healthmei.com/" class="buy-btn">
+        立即購買
+      </a>
+    </div>
+
   </div>
 
 </div>
 
 <footer>
-  © 2026 HealthMei
+  © 2026 HealthMei<br>
+  HealthMei Independent Health Platform
 </footer>
 
 </body>
